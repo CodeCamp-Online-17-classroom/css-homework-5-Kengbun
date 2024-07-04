@@ -1,1 +1,231 @@
-<!-- write code here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        div {
+            /* border: 1px dashed red; */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .container .fa {
+            display: flex;
+            flex-flow: column;
+            /* justify-content: center; */
+            /* width: 40vw; */
+            margin-top: 10%;
+            margin-right: 15px;
+        }
+
+        .fa h1 {
+            font-size: 4rem;
+            color: rgb(37, 68, 243);
+        }
+
+        .login {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            /* width: 80vh; */
+            /* height: auto; */
+        }
+
+        .login> :last-child {
+            font-size: 1rem;
+            padding: 0 20px;
+            /* border: 1px dashed red ; */
+        }
+
+        form {
+            margin: 10px;
+            height: 60%;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-flow: column;
+            background-color: white;
+            align-items: center;
+        }
+
+        form input[type="text"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button:not(:last-child) {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(37, 68, 243);
+            color: white;
+        }
+
+        form>a {
+            margin: 10px;
+        }
+
+        form>hr {
+            width: 100%;
+            margin: 20px;
+        }
+
+        form :last-child {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            background-color: #42b72a;
+            border: none;
+            border-radius: 5px;
+            width: 50%;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background-color: white;
+            padding: 30px 50px 0 50px;
+            color: gray
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: gray;
+            margin: 0 5px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer hr {
+            margin: 10px 0;
+        }
+
+        .footer p {
+            padding: 20px 0;
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                height: auto;
+                flex-flow: column;
+                margin-top: 50px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .container .fa {
+                text-align: center;
+                margin-top: 0;
+            }
+
+            .login {
+                margin-top: 5%;
+            }
+
+            form {
+                height: auto;
+                /* border: 1px solid rebeccapurple; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fa">
+            <h1>Facebook</h1>
+            <p>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</p>
+        </div>
+        <div class="login">
+            <form action="#" method="#">
+                <input type="text" placeholder="อีเมลหรือรหัสผ่าน" required>
+                <input type="password" placeholder="รหัสผ่าน" required>
+                <button type="submit">เข้าสู่ระบบ</button>
+                <a href="#">ลืมรหัสผ่านใช่หรือไม่</a>
+                <hr>
+                <button class="btn"><a href="#">สร้างบัญชีใหม่</a></button>
+            </form>
+            <p><b>สร้างเพจ</b> สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <a href="#">ภาษาไทย</a>
+        <a href="#"> English (UK)</a>
+        <a href="#">日本語</a>
+        <a href="#">中文(简体)</a>
+        <a href="#">中文(简体)</a>
+        <a href="#">Français (France)</a>
+        <a href="#">Deutsch</a>
+        <a href="#">Русский</a>
+        <a href="#">Español</a>
+        <a href="#">Português (Brasil)</a>
+        <a href="#">Italiano</a>
+        <a style="border: 1px solid; padding: 0 10px;" href="#"><b>+</b></a>
+        <hr>
+        <a href="#">สมัคร</a>
+        <a href="#">เข้าสู่ระบบ</a>
+        <a href="#">Messenger</a>
+        <a href="#">Facebook Lite</a>
+        <a href="#">วิดีโอ</a>
+        <a href="#">สถานที่</a>
+        <a href="#">เกม</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Meta Pay</a>
+        <a href="#">Meta Store</a>
+        <a href="#">Meta Quest</a>
+        <a href="#">Meta AI</a>
+        <a href="#">Instagram</a>
+        <a href="#">Threads</a>
+        <a href="#">โครงการระดมทุน</a>
+        <a href="#">บริการ</a>
+        <a href="#">ศูนย์ข้อมูลการลงคะแนนเสียง</a>
+        <a href="#">นโยบายความเป็นส่วนตัว</a>
+        <a href="#">ศูนย์ความเป็นส่วนตัว</a>
+        <a href="#">กลุ่ม</a>
+        <a href="#">เกี่ยวกับ</a>
+        <a href="#">สร้างโฆษณา</a>
+        <a href="#">สร้างเพจ</a>
+        <a href="#">ผู้พัฒนา</a>
+        <a href="#">ร่วมงานกับ Facebook</a>
+        <a href="#">คุกกี้</a>
+        <a href="#">ตัวเลือกโฆษณา</a>
+        <a href="#">เงื่อนไข</a>
+        <a href="#">ความช่วยเหลือ</a>
+        <a href="#">การอัพโหลดผู้ติดต่อและผู้ที่ไม่ได้ใช้บริการ</a>
+        <a href="#">การตั้งค่า</a>
+        <a href="#">บันทึกกิจกรรม</a>
+        <p>Meta © 2024</p>
+
+    </div>
+
+
+</body>
+
+</html>
